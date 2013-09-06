@@ -22,4 +22,7 @@ class Application < ActiveRecord::Base
       0
     end
   end
+  def overall_score
+    votings.sum(&:score)/Category.count
+  end
 end
