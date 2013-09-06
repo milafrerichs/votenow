@@ -1,0 +1,7 @@
+%h1= @application.name
+
+#voting(ng-controller='VotingCtrl')
+  - @categories.each do |category|
+    %h2= category.name
+    - (0..5).each do |i|
+      %button(ng-click="vote(#{i})")= i 

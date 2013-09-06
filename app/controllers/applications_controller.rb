@@ -11,6 +11,8 @@ class ApplicationsController < ApplicationController
   end
 
   def vote
+    @application = Application.find(params[:id])
+    @categories = Category.all
     if request.get?
       # voting interface
     else

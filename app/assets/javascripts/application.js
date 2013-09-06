@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require angular
+//= require angularjs/rails/resource
+//= require angular/app
+//= require angular/voting
 //= require d3
 //= require show
