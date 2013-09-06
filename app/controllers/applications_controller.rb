@@ -8,15 +8,9 @@ class ApplicationsController < ApplicationController
 
   def show
     @application = Application.find(params[:id])
+    scores = Category.all.map{|cat| {name: cat.name, score: @application.score_for(cat)}}
 
-    gon.data = [
-      {name: 'Category Name', score: 2.3},
-      {name: 'lala', score: 4.3},
-      {name: 'lalal2', score: 2.6},
-      {name: 'lalala3', score: 1.3},
-      {name: 'clalalal3', score: 2.3},
-      {name: 'clalal3', score: 2.3}
-    ]
+    gon.data = scores
   end
 
   def vote
