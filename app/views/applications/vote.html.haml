@@ -4,4 +4,4 @@
   - @categories.each do |category|
     %h2= category.name
     - (0..5).each do |i|
-      %button(ng-click="vote(#{i})")= i 
+      %button(ng-click="vote(#{i}, '#{category.id}')")= i 

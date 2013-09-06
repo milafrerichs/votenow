@@ -2,9 +2,7 @@ app = angular.module('VoteNow')
 
 app = angular.module('VoteNow')
 
-app.controller 'VotingCtrl', ($scope, gon) ->
+app.controller 'VotingCtrl', ($scope, gon, $http, $location) ->
 
-  $scope.categories = gon.categories
-
-  $scope.vote = (vote) ->
-    console.log vote: vote
+  $scope.vote = (score, category_id) ->
+    $http.post($location.path(), score: score, category_id: category_id)
