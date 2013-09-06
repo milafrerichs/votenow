@@ -68,6 +68,8 @@ GEM
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     ffi (1.9.0)
+    foreman (0.62.0)
+      thor (>= 0.13.6)
     formatador (0.2.4)
     fssm (0.2.10)
     git (1.2.6)
@@ -223,6 +225,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails!
   d3-rails
+  foreman
   guard-rspec
   haml
   jbuilder (~> 1.2)
