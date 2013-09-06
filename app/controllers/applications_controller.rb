@@ -4,6 +4,8 @@ class ApplicationsController < ApplicationController
   def index
     @categories = Category.all
     @applications = Application.all
+    scores = Application.all.sort_by(&:overall_score).reverse.map{|app| { name: app.name, score: app.overall_score } }
+    gon.data = scores
   end
 
   def show

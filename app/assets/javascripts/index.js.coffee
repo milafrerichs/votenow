@@ -4,13 +4,7 @@
 #
 $ ->
   if $('#ranking').length > 0
-    data = [
-      {name: 'App2', score: 5.0},
-      {name: 'App3', score: 4.7},
-      {name: 'App4', score: 3.3},
-      {name: 'App5', score: 2.0},
-      {name: 'App6', score: 1.0}
-    ]
+    data = gon.data
     x_scale = d3.scale.linear().domain([0,5]).range([0,400])
     y_scale = d3.scale.ordinal().domain(data.map((d) -> d.name)).rangeRoundBands([0,600],.1)
     y_axis_scale = d3.scale.linear().domain([1,data.length]).range([0,600])
