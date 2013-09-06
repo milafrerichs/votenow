@@ -1,16 +1,9 @@
 $ ->
-  data = [
-    {name: 'Category Name', score: 2.3},
-    {name: 'lala', score: 4.3},
-    {name: 'lalal2', score: 2.6},
-    {name: 'lalala3', score: 1.3},
-    {name: 'clalalal3', score: 2.3},
-    {name: 'clalal3', score: 2.3}
-  ]
-
+  data = gon.data
+  console.log(data)
   y_scale = d3.scale.linear()
-     .domain([0, 5])
-     .range([100, 0])
+    .domain([0, 5])
+    .range([100, 0])
 
   x_scale = d3.scale.ordinal()
     .domain(data.map((d)->d.name))

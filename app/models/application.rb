@@ -1,5 +1,21 @@
 class Application < ActiveRecord::Base
+  has_many :votings
+
   def name
     github_link.split('/').last.capitalize
+  end
+
+  def to_s
+    name
+  end
+
+  def score_for(category)
+    relevant_votings = votings.where(category: category)
+    score = 0
+    relevant_votings.each do |v|
+      score = score + v.score
+    end
+
+    score
   end
 end
