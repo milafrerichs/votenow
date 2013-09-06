@@ -1,5 +1,7 @@
 Votenow::Application.routes.draw do
-  resources :applications
+  resources :applications do
+    match 'vote', on: :member, via: [:get, :post]
+  end
 
   # oauth
   get '/login', to: redirect('/auth/github')

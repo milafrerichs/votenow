@@ -3,9 +3,18 @@ class ApplicationsController < ApplicationController
 
   def index
     @categories = Category.all
+    @applications = Application.all
   end
 
   def show
     @application = Application.find(params[:id])
+  end
+
+  def vote
+    if request.get?
+      # voting interface
+    else
+      # create vote
+    end
   end
 end
