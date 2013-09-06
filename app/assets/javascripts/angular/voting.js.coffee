@@ -2,7 +2,7 @@ app = angular.module('VoteNow')
 
 app = angular.module('VoteNow')
 
-app.controller 'VotingCtrl', ($scope) ->
+app.controller 'VotingCtrl', ($scope, gon) ->
 
   $scope.categories = gon.categories
 

@@ -16,6 +16,7 @@
 //= require angular
 //= require angularjs/rails/resource
 //= require angular/app
+//= require angular/models
 //= require angular/voting
 //= require d3
 //= require show
