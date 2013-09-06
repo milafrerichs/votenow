@@ -27,3 +27,6 @@ end
 
 # for heroku
 gem 'rails_12factor', group: :production
+
+# for fun
+gem 'lolcommits'
