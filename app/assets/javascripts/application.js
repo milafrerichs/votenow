@@ -20,3 +20,4 @@
 //= require angular/voting
 //= require d3
 //= require show
+//= require index
