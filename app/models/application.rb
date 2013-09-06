@@ -16,6 +16,10 @@ class Application < ActiveRecord::Base
       score = score + v.score
     end
 
-    score
+    if score > 0
+      score / relevant_votings.count
+    else
+      0
+    end
   end
 end

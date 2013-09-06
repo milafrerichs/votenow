@@ -21,7 +21,9 @@ class ApplicationsController < ApplicationController
     if request.get?
       # voting interface
     else
-      Voting.find_or_create_by(application_id: @application.id, user_id: current_user.id, category_id: params[:category_id]).update_attributes!(score: params[:score])
+      Voting
+        .find_or_create_by(application_id: @application.id, user_id: current_user.id, category_id: params[:category_id])
+        .update_attributes!(score: params[:score])
       head :ok
       # create vote
     end
