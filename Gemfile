@@ -8,7 +8,7 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
-gem 'compass-rails'
+gem 'compass-rails', github: 'milgner/compass-rails', branch: 'rails4'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'haml'
