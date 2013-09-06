@@ -21,7 +21,8 @@ gem 'omniauth-github', :git => 'git://github.com/intridea/omniauth-github.git'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'angularjs-rails'
+gem "angularjs-rails", "~> 1.2.0.rc2"
+gem 'angularjs-rails-resource', '~> 0.2.0'
 gem 'd3-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
