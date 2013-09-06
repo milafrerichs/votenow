@@ -60,6 +60,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    d3-rails (0.0.5)
+      railties (>= 3.1)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.1)
@@ -220,6 +222,7 @@ DEPENDENCIES
   angularjs-rails
   coffee-rails (~> 4.0.0)
   compass-rails!
+  d3-rails
   guard-rspec
   haml
   jbuilder (~> 1.2)
