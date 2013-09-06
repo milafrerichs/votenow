@@ -4,6 +4,7 @@ ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'puma'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -12,6 +13,8 @@ gem 'compass-rails', github: 'milgner/compass-rails', branch: 'rails4'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'haml'
+
+gem 'omniauth-github', :git => 'git://github.com/intridea/omniauth-github.git'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -28,9 +31,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-
-gem 'puma'
 
 group :test, :development do
   gem 'rspec-rails'
