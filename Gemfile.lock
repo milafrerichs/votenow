@@ -74,6 +74,9 @@ GEM
     formatador (0.2.4)
     fssm (0.2.10)
     git (1.2.6)
+    gon (4.1.1)
+      actionpack (>= 2.3.0)
+      json
     guard (1.8.2)
       formatador (>= 0.2.4)
       listen (>= 1.0.0)
@@ -230,6 +233,7 @@ DEPENDENCIES
   compass-rails!
   d3-rails
   foreman
+  gon
   guard-rspec
   haml
   jbuilder (~> 1.2)
