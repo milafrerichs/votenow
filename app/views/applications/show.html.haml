@@ -1,8 +1,9 @@
-%h1=@application.name
-= link_to 'Vote', vote_application_path(@application)
-#votings
-  %svg#graph
-    %g.charts
-    %g.grid
-    %g.axis.x
-    %g.axis.y
+#application{ 'data-id' => @application.id }
+  %h1=@application.name
+  = link_to 'Vote', vote_application_path(@application)
+  #votings
+    %svg#graph
+      %g.charts
+      %g.grid
+      %g.axis.x
+      %g.axis.y

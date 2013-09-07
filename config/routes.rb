@@ -1,5 +1,9 @@
 Votenow::Application.routes.draw do
   resources :applications do
+    collection do
+      get :score_events
+      get 'score_events/:id', to: :score_events
+    end
     match 'vote', on: :member, via: [:get, :post]
   end
 
