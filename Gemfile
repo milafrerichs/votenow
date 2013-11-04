@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.1'
 gem 'puma'
 gem 'foreman'
 gem 'dotenv-rails', :groups => [:development, :test]
@@ -14,10 +14,12 @@ gem 'pry-rails'
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: [:production]
 gem 'sass-rails', '~> 4.0.0'
-gem 'compass-rails', github: 'milgner/compass-rails', branch: 'rails4'
+gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails-source-maps'
 gem 'haml'
+gem 'bootstrap-sass', '~> 3.0.1.0.rc'
 
 gem 'omniauth-github', :git => 'git://github.com/intridea/omniauth-github.git'
 
