@@ -25,6 +25,7 @@ gem 'omniauth-github', :git => 'git://github.com/intridea/omniauth-github.git'
 gem 'jquery-rails'
 gem "angularjs-rails", "~> 1.2.0.rc3"
 gem 'angularjs-rails-resource', '~> 0.2.0'
+gem 'lodash-rails'
 gem 'd3-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,6 +40,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem "better_errors"
 end
 # for heroku
 gem 'rails_12factor', group: :production

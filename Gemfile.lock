@@ -46,6 +46,9 @@ GEM
     angularjs-rails-resource (0.2.2)
     arel (4.0.0)
     atomic (1.1.13)
+    better_errors (0.8.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     builder (3.1.4)
     choice (0.1.6)
     chunky_png (1.2.8)
@@ -110,6 +113,8 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    lodash-rails (2.2.1)
+      railties (>= 3.1)
     lolcommits (0.2.0)
       choice (~> 0.1.6)
       git (~> 1.2.5)
@@ -231,6 +236,7 @@ PLATFORMS
 DEPENDENCIES
   angularjs-rails (~> 1.2.0.rc3)
   angularjs-rails-resource (~> 0.2.0)
+  better_errors
   coffee-rails (~> 4.0.0)
   compass-rails!
   d3-rails
@@ -241,6 +247,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 1.2)
   jquery-rails
+  lodash-rails
   lolcommits
   omniauth-github!
   pg
