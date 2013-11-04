@@ -21,5 +21,11 @@
     font-family: sans-serif;
     font-size: 11px;
 }
+#ranking rect {
+  fill: #ccc;
+}
+#ranking text {
+  fill: #333;
+}
 
 @import "bootstrap";

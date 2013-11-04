@@ -1,11 +1,9 @@
-#category-tabs
-  %ul
-    - @categories.each do |category|
-      %li
-        %a= category.name
-  %ul
-    - @applications.each do |application|
-      = link_to application, application
+%ul{ class: "nav nav-tabs" }
+  %li{ class: "active"} 
+    %a Alle
+  - @categories.each do |category|
+    %li
+      %a= category.name
 #rankings
   %svg#ranking
     %g
