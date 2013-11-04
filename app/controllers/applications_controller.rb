@@ -35,11 +35,12 @@ class ApplicationsController < ApplicationController
     gon.categories = @categories
     if request.get?
       # voting interface
+      gon.votings = current_user.votings.where(application: @application)
     else
-      Voting
+      @voting = Voting
         .find_or_create_by(application_id: @application.id, user_id: current_user.id, category_id: params[:category_id])
-        .update_attributes!(score: params[:score])
-      head :ok
+      @voting.update_attributes!(score: params[:score])
+      render json: @voting
       # create vote
     end
   end
