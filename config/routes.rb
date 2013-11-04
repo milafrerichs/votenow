@@ -9,6 +9,7 @@ Votenow::Application.routes.draw do
 
   # oauth
   get '/login', to: redirect('/auth/github')
+  get '/logout', to: 'users#logout'
   match '/auth/github/callback', to: 'users#register', via: [:get, :post]
 
   root to: 'applications#index'
