@@ -1,8 +1,9 @@
 %h1= @application.name
 
 #voting(ng-controller='VotingCtrl')
-  %ul(ng-repeat='category in categories')
-    %li
+  %ul.categories
+    %li(ng-repeat='category in categories')
       %h2 {{category.name}}
-      %ul(ng-repeat='score in [0, 1, 2, 3, 4, 5]')
-        %button.btn(ng-click="vote(score, category.id)" ng-class="{'btn-success': scoreOf(category.id) == score}") {{score}}
+      %ul.score-buttons
+        %li(ng-repeat='score in [0, 1, 2, 3, 4, 5]')
+          %button.btn(ng-click="vote(score, category.id)" ng-class="{'btn-success': scoreOf(category.id) == score}") {{score}}
