@@ -12,6 +12,7 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require lodash
 #= require d3
 #= require show
 #= require index
