@@ -6,4 +6,9 @@ class UsersController < ApplicationController
       .find_or_create_by!(uid: env['omniauth.auth']['uid'])
     redirect_to root_path
   end
+  
+  def logout
+    sign_out
+    redirect_to root_path
+  end
 end
