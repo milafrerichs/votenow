@@ -3,6 +3,6 @@
 #voting(ng-controller='VotingCtrl')
   %ul(ng-repeat='category in categories')
     %li
-      %h2 {{category.name}} {{score(category.id)}}
+      %h2 {{category.name}}
       %ul(ng-repeat='score in [0, 1, 2, 3, 4, 5]')
-        %button(ng-click="vote(score, category.id)") {{score}}
+        %button.btn(ng-click="vote(score, category.id)" ng-class="{'btn-success': scoreOf(category.id) == score}") {{score}}

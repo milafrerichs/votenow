@@ -4,7 +4,7 @@ app.controller 'VotingCtrl', ($scope, gon, $http, $location) ->
 
   $scope.categories = gon.categories
 
-  $scope.score = (category_id) ->
+  $scope.scoreOf = (category_id) ->
     voting = _.find(gon.votings, category_id: category_id) || { score: null }
     voting.score
 
