@@ -64,6 +64,9 @@ GEM
     d3-rails (0.0.5)
       railties (>= 3.1)
     diff-lcs (1.2.4)
+    dotenv (0.9.0)
+    dotenv-rails (0.9.0)
+      dotenv (= 0.9.0)
     erubis (2.7.0)
     execjs (2.0.1)
     faraday (0.8.8)
@@ -231,6 +234,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails!
   d3-rails
+  dotenv-rails
   foreman
   gon
   guard-rspec

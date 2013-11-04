@@ -6,6 +6,7 @@ ruby "2.0.0"
 gem 'rails', '4.0.0'
 gem 'puma'
 gem 'foreman'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'pry-rails'
 
