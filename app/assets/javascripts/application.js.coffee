@@ -18,3 +18,4 @@
 #= require angular
 #= require angularjs/rails/resource
 #= require angular/app
+#= require bootstrap
