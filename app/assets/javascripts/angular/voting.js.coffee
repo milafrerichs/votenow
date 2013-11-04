@@ -1,7 +1,5 @@
 app = angular.module('VoteNow')
 
-app = angular.module('VoteNow')
-
 app.controller 'VotingCtrl', ($scope, gon, $http, $location) ->
 
   $scope.vote = (score, category_id) ->

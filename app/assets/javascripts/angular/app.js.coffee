@@ -1,4 +1,6 @@
-# define app
+#= require_self
+#= require_tree .
+
 angular.module 'VoteNow', ['rails']
 
 angular.element(document).ready ->

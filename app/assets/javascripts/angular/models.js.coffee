@@ -4,7 +4,7 @@ app.factory 'gon', ($window) ->
   $window.gon or {}
 
 app.factory 'Category', (railsResourceFactory) ->
-  railsResourceFactory({url: '/categories', name: 'category'});
+  railsResourceFactory({url: '/categories', name: 'category'})
 
 app.factory 'Application', (railsResourceFactory) ->
-  railsResourceFactory({url: '/applications', name: 'application'});
+  railsResourceFactory({url: '/applications', name: 'application'})
