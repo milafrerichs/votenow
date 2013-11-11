@@ -7,3 +7,7 @@
 - `foreman start`
 
 http://votenow-zweitag.herokuapp.com/
+
+## Issues & Features
+
+Use [Github Issues](https://github.com/milafrerichs/votenow/issues)
